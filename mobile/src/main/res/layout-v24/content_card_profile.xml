@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:orientation="horizontal">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/android_card_view_example"
+        style="@style/MyCardViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="#ddd"
+        android:elevation="8sp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:elevation="4dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:forceHasOverlappingRendering="true"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/cardview_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="18dp"
+                android:contentDescription="logo"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/cardview_list_title"
+                style="@android:style/TextAppearance.Material.Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/cardview_image"
+                android:layout_toEndOf="@+id/cardview_image"
+                android:paddingBottom="5dp"
+                android:text="@string/pedro_miguel_martins"
+                android:textAlignment="center"
+                android:textIsSelectable="false"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView"
+                style="@android:style/TextAppearance.Material.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/getCV"
+                android:layout_alignParentStart="true"
+                android:paddingBottom="5dp"
+                android:text="@string/specialist_altran"
+                android:textIsSelectable="false"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/short_description"
+                style="@android:style/Widget.Material.TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/cardview_list_title"
+                android:layout_toEndOf="@+id/cardview_image"
+                android:text="@string/fully_professional"
+                android:textColor="#8b8b8b" />
+
+            <Button
+                android:id="@+id/getCV"
+                style="@android:style/Widget.Material.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/short_description"
+                android:layout_gravity="center"
+                android:enabled="true"
+                android:focusable="true"
+                android:text="View CV"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+
+
+
